@@ -14,7 +14,7 @@ public class GifController {
     @RequestMapping(value = "/")
     public String listGifs(){
 
-        return "index";
+        return "home";
     }
 
     @GetMapping("/gif")

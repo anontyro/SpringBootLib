@@ -63,4 +63,16 @@ public class GifRepository {
 
         return output;
     }
+
+    public List<Gif> searchQuery(String name){
+        List<Gif> output = new ArrayList<>();
+
+        for(Gif gif : ALL_GIFS){
+            if(gif.getName().toLowerCase().contains(name)){
+                output.add(gif);
+            }
+        }
+
+        return output;
+    }
 }

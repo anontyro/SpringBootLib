@@ -50,4 +50,17 @@ public class GifRepository {
 
         return output;
     }
+
+    public List<Gif> findAllFavourites(){
+        List<Gif> output = new ArrayList<>();
+
+        for(Gif gif: ALL_GIFS){
+
+            if(gif.getFavourite()){
+                output.add(gif);
+            }
+        }
+
+        return output;
+    }
 }
